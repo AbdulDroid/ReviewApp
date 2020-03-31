@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ReviewApp</string>
+    <string name="full_name_abdulrahman_abdulkarim">Full Name: Abdulrahman Abdulkarim</string>
+    <string name="email_address_olanre12waju_gmail_com">Email Address: olanre12waju@gmail.com</string>
+    <string name="slack_userame_abdul">Slack Userame: @abdul</string>
+    <string name="tracks_mobile">Tracks: Mobile</string>
+</resources>
