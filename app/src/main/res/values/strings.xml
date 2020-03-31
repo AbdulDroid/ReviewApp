@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">ReviewApp</string>
-    <string name="full_name_abdulrahman_abdulkarim">Full Name: Abdulrahman Abdulkarim</string>
-    <string name="email_address_olanre12waju_gmail_com">Email Address: olanre12waju@gmail.com</string>
-    <string name="slack_userame_abdul">Slack Userame: @abdul</string>
-    <string name="tracks_mobile">Tracks: Mobile</string>
+    <string name="full_name_abdulrahman_abdulkarim">Abdulrahman Abdulkarim</string>
+    <string name="email_address_olanre12waju_gmail_com">olanre12waju@gmail.com</string>
+    <string name="slack_userame_abdul">\@abdul</string>
+    <string name="tracks_mobile">Mobile</string>
+    <string name="title_activity_review_recycler">ReviewRecyclerActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
