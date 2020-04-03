@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_second.*
@@ -13,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_second.*
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class SecondFragment : Fragment() {
+class SecondFragment : Fragment(), BioRecyclerAdapter.OnItemClick {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,7 +29,7 @@ class SecondFragment : Fragment() {
         with(task_recycler) {
             layoutManager = LinearLayoutManager(requireContext())
             setHasFixedSize(true)
-            adapter = BioRecyclerAdapter(populate())
+            adapter = BioRecyclerAdapter(populate(), this@SecondFragment)
         }
         button_second.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
@@ -43,5 +44,9 @@ class SecondFragment : Fragment() {
                     BioItem("Slack Username:", getString(R.string.slack_userame_abdul)),
             BioItem("Tracks:", getString(R.string.tracks_mobile))
         )
+    }
+
+    override fun onClick() {
+        Toast.makeText(requireContext(), "An Item was clicked", Toast.LENGTH_LONG).show()
     }
 }
